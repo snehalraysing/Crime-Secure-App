@@ -1,0 +1,243 @@
+.officerincidents {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: url(https://image.ibb.co/de6JzG/bitmap_1_1.png) !important;
+    font-family: "Roboto", sans-serif;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.officerincidents .container {
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.officerincidents h2 {
+    font-size: 35px;
+    padding-top: 80px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.officerincidents .col_btn {
+    border: none;
+    outline: none;
+    padding: 5px 22px;
+    background: transparent;
+    border: 1px solid #00337C;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.3s;
+    background: #2684ff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+}
+
+.officerincidents .col_btn:hover {
+    background: transparent;
+    color: #2684ff;
+    border: 1px solid #00337C;
+}
+
+/* Ensure button and dropdown are side-by-side */
+.officerincidents .col-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Table Header and Row Alignments */
+.officerincidents .responsive-table .table-header {
+    position: relative;
+    background-color: #95a5a6;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* font-size: 20px; */
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.officerincidents .responsive-table li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-bottom: 25px;
+    background-color: transparent;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+
+.officerincidents .responsive-table .col {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.officerincidents .responsive-table .col-1,
+.officerincidents .responsive-table .col-2,
+.officerincidents .responsive-table .col-3,
+.officerincidents .responsive-table .col-4{
+    flex: 1 1 60%;
+    text-align: center;
+}
+
+.officerincidents .responsive-table .col-2 {
+    flex: 1 1 77%;
+    text-align: left;
+}
+
+.officerincidents .responsive-table .col-3 {
+    flex: 1 1 115%;
+}
+
+.officerincidents .responsive-table .col-4 {
+    flex: 1 1 49%;
+}
+
+.officerincidents .head_col-1,
+.officerincidents .head_col-2,
+.officerincidents .head_col-3,
+.officerincidents .head_col-4 {
+    text-align: center;
+    padding: 10px;
+}
+
+.officerincidents .head_col-2,
+.officerincidents .head_col-3,
+.officerincidents .head_col-4{
+    position: relative;
+    left: -125px;
+}
+
+.officerincidents .head_col-3 {
+    text-align: center; /* Maintain centered text */
+    margin-left: 30px; /* Adjust this value to shift right */
+}
+
+.officerincidents .head_col-4 {
+    text-align: center; /* Maintain centered text */
+    margin-left: 20px; /* Adjust this value to shift right */
+}
+
+.officerincidents .responsive-table .col-3 {
+    flex: 1 1 112%;
+    margin-right: 10px; /* Shift right */
+    text-align: center; /* Maintain centered content */
+}
+
+.officerincidents .responsive-table .col-4 {
+    flex: 1 1 49%;
+    margin-right: 20px; /* Shift right */
+    text-align: center; /* Maintain centered content */
+}
+
+
+
+.officerincidents .col-4 {
+    margin-left: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+}
+
+.officerincidents button {
+    width: 150px; /* Fixed width for the button */
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.officerincidents .dropdown-content {
+    display: flex;
+    align-items: center; /* Ensures the dropdown is aligned properly */
+    margin-left: 10px; /* Add some space between the button and dropdown */
+    gap: 30px; /* Add spacing between button and select */
+}
+
+.officerincidents select {
+    width: auto; /* Makes sure the dropdown width adjusts based on its content */
+    padding: 0.5rem; /* Padding inside dropdown for a better look */
+    border-radius: 0.25rem;
+    border: 1px solid #ccc; /* Light border for dropdown */
+
+}
+
+.officerincidents .responsive-table .col-2 {
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Ensure text alignment is centered */
+    padding-right: 160px; /* Add padding for spacing */
+    word-wrap: break-word; /* Handle long text gracefully */
+}
+
+
+.officerincidents .responsive-table .col-3 {
+    flex: 1 1 115%;
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Ensure text alignment is centered */
+    padding: 10px; /* Add padding for spacing */
+    word-wrap: break-word; /* Handle long text gracefully */
+}
+
+
+@media all and (max-width: 767px) {
+    .responsive-table .table-header {
+        display: none;
+    }
+
+    .officerincidents .head_col-3,
+    .officerincidents .head_col-4 {
+        margin-left: 20px; /* Reduce the shift on smaller screens */
+    }
+    
+
+    .responsive-table li {
+        display: block;
+    }
+
+    .responsive-table .col {
+        flex-basis: 100%;
+        display: block;
+        padding: 10px 0;
+    }
+
+    .responsive-table .col:before {
+        color: #6c7a89;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
+    }
+
+    .officerincidents h2 {
+        font-size: 28px;
+        padding-top: 40px;
+    }
+
+    .officerincidents .col_btn {
+        margin-top: 10px;
+        padding: 8px 18px;
+        width: 100%;
+    }
+}

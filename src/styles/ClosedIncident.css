@@ -1,0 +1,141 @@
+/* Overall layout for the CloseIncident component */
+.CloseIncident {
+  padding-top: 40px;
+  margin: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: url(https://image.ibb.co/de6JzG/bitmap_1_1.png) !important;
+  font-family: "Roboto", sans-serif;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.CloseIncident .container {
+  width: 90vw;
+  background-color: transparent;
+  margin: 0 auto;
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+/* Header Styles */
+.CloseIncident h2 {
+  font-size: 35px;
+  padding-top: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Table Styles */
+.CloseIncident .responsive-table {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+.CloseIncident .table-header {
+  display: flex;
+  background-color: #95a5a6;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.CloseIncident .table-header div {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Row Styles */
+.CloseIncident .table-row {
+  display: flex;
+  padding: 15px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3px;
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.1);
+}
+
+.CloseIncident .table-row:hover {
+  background-color: #e8e8e8;
+}
+
+.CloseIncident .table-row .col {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Button Styles */
+.CloseIncident .bg-blue-500 {
+  background-color: #2684ff;
+  padding: 10px 22px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.CloseIncident .bg-blue-500:hover {
+  background-color: #0056b3;
+}
+
+/* SAVE CHANGES button container */
+.CloseIncident .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .CloseIncident .table-header {
+    display: none; /* Hide header on smaller screens */
+  }
+
+  .CloseIncident .table-row {
+    flex-direction: column; /* Stack columns vertically */
+    align-items: flex-start;
+    font-size: 14px;
+  }
+
+  .CloseIncident .table-row .col {
+    text-align: left; /* Align text to the left */
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .CloseIncident .table-row .col::before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 10px;
+    text-transform: uppercase;
+  }
+
+  .CloseIncident h2 {
+    font-size: 28px;
+  }
+
+  .CloseIncident .bg-blue-500 {
+    width: 100%; /* Full-width button */
+    text-align: center;
+    padding: 10px;
+  }
+}

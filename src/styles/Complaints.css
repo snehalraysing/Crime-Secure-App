@@ -1,0 +1,105 @@
+/* Overall Styling */
+.Mycomplaint {
+    color:#071842;
+    /* background-color: #f8f9fa; Light gray for better readability */
+    padding: 0px;
+}
+
+.Mycomplaint h2 {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    padding-top: 30px;
+    color: #071842;
+    font-size: 40px;
+}
+
+/* Table Container */
+.Mycomplaint .container {
+    width: 90vw;
+    margin: 0 auto;
+    /* background-color: #fff; */
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+/* Table Header */
+.Mycomplaint .responsive-table .table-header {
+    /* border: 1px solid #0f0a0a; */
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr; /* Adjust column widths */
+    background-color: #95a5a6;
+    color: #071842;
+    padding: 15px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    align-items: center;
+    margin-bottom: 15px; 
+}
+
+/* Table Rows */
+.Mycomplaint .responsive-table .table-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    padding: 15px 10px;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid #0f0a0a; */
+    /* background-color: #fff; */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.Mycomplaint .responsive-table .table-row:hover {
+    background-color: #f1f5f9; /* Light blue on hover */
+}
+
+/* Table Cells */
+.Mycomplaint .responsive-table div {
+    font-size: 16px;
+    color:#071842;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Prevent text wrapping */
+    
+}
+
+/* Button Styling */
+.Mycomplaint .col_btn {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    padding: 8px 0px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    /* Center the button */
+    display: inline-block; /* Ensure button takes its content size */
+    margin: auto; /* Horizontally center */
+    position: relative; /* Align within its parent container */
+}
+
+.Mycomplaint .col_btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #fff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .responsive-table .table-header,
+    .responsive-table .table-row {
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 12px;
+    }
+
+    .responsive-table .table-row div:nth-child(4),
+    .responsive-table .table-row div:nth-child(5) {
+        display: none; /* Hide less important columns on smaller screens */
+    }
+}
